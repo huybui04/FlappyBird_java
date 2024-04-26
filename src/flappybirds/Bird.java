@@ -22,9 +22,9 @@ public class Bird extends Objects {
 		
 		rect = new Rectangle(x, y, w, h);
 		
-		flapSound = new SoundPlayer(new File("../Assets/fap.wav"));
-		collideSound = new SoundPlayer(new File("../Assets/fall.wav"));
-		getScoreSound = new SoundPlayer(new File("../Assets/getpoint.wav"));
+		flapSound = new SoundPlayer(new File("src/Assets/fap.wav"));
+		collideSound = new SoundPlayer(new File("src/Assets/fall.wav"));
+		getScoreSound = new SoundPlayer(new File("src/Assets/getpoint.wav"));
 		
 	}
 	

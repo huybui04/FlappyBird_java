@@ -44,7 +44,7 @@ public class FlappyBirds extends GameScreen {
 		super(800, 600);
 		
 		try {
-			birds = ImageIO.read(new File("../Assets/bird_sprite.png"));
+			birds = ImageIO.read(new File("src/Assets/bird_sprite.png"));
 			
 		} catch (IOException e) {
 			
@@ -89,7 +89,7 @@ public class FlappyBirds extends GameScreen {
 		if(SCORE > TEMP) HIGH_SCORE = "" + SCORE;
 		
 		
-		File scoreFile = new File("../Assets/high_score.txt");
+		File scoreFile = new File("src/Assets/high_score.txt");
 		if(!scoreFile.exists())
 		{
 			try {
@@ -120,7 +120,7 @@ public class FlappyBirds extends GameScreen {
 	public String getHighScore() {
 		BufferedReader br = null;
 		try {
-			FileReader fr = new FileReader("../Assets/high_score.txt");
+			FileReader fr = new FileReader("src/Assets/high_score.txt");
 			br = new BufferedReader(fr);
 			return br.readLine();
 		} catch (IOException e) {

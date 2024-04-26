@@ -25,8 +25,8 @@ public class ChimneyGroup {
 		
 		try {
 			
-			chimneyImage = ImageIO.read(new File("../Assets/chimney.png"));
-			chimneyImage2 = ImageIO.read(new File("../Assets/chimney_.png"));
+			chimneyImage = ImageIO.read(new File("src/Assets/chimney.png"));
+			chimneyImage2 = ImageIO.read(new File("src/Assets/chimney_.png"));
 			
 		} catch (IOException e) {
 			e.printStackTrace();
